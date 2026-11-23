@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+   >
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="wassets/css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="wassets/css/styles.css">
+    <link rel="icon" href="images/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.f10f1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.f10f1.png">
+    <link rel="icon" href="images/favicon.f10f1.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/favicon-192x192.f10f1.png">
+
+
+
+   <title>Encore AI Login - AI Agents for SRE &amp; Cloud Ops - Your Incidents. Your Cloud Costs. Handled.</title>
+
+   <style>
+      .top-right-button {
+         position: fixed;
+         top: 20px;
+         right: 20px;
+         padding: 10px 16px;
+         background-color: blue;
+         color: white;
+         text-decoration: none;
+         border-radius: 6px;
+         font-family: Arial, sans-serif;
+         z-index: 1000;
+      }
+
+      .top-right-button:hover {
+         background-color: #0056b3;
+      }
+
+      .logo-link {
+         display: block;
+         width: fit-content;
+         margin: 0 auto 20px;
+      }
+
+      .logo {
+         display: block;
+         max-width: 200px;
+         height: auto;
+      }
+
+      /* New styles for error messages */
+      .error-message {
+         color: #ff4d4d;
+         font-size: 0.8rem;
+         margin-top: 5px;
+         display: none; /* Hidden by default */
+         font-family: Arial, sans-serif;
+      }
+      
+      .login__box {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+      }
+   </style>
+</head>
+<body>
+   <a class="top-right-button" href="index1.html">Go to Company page</a>
+
+   <div class="login container grid">
+      <div class="login__container grid">
+         <div class="login__swiper swiper">
+            <div class="login__swiper-data">
+               <p class="login__swiper-subtitle"></p>
+               <h1 class="login__swiper-title"><br></h1>
+            </div>
+
+            <div class="login__swiper-social">
+               <p class="login__swiper-subtitle"></p>
+
+               <div class="login__swiper-links">
+                  <a href="" target="_blank" class="login__swiper-link"><i class=""></i></a>
+                  <a href="" target="_blank" class="login__swiper-link"><i class=""></i></a>
+                  <a href="" target="_blank" class="login__swiper-link"><i class=""></i></a>
+                  <a href="" target="_blank" class="login__swiper-link"><i class=""></i></a>
+                  <a href="" target="_blank" class="login__swiper-link"><i class=""></i></a>
+               </div>
+            </div>
+
+            <div class="swiper-wrapper">
+               <img src="wassets/img/img-1.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-2.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-3.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-4.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-5.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-6.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-7.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-8.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-9.png" alt="image" class="login__swiper-img swiper-slide">
+               <img src="wassets/img/img-10.png" alt="image" class="login__swiper-img swiper-slide">
+            </div>
+
+            <div class="swiper-pagination"></div>
+         </div>
+
+         <div class="login__area grid">
+            <div class="login__data">
+               <a class="logo-link" href="index1.html" aria-label="Go to Company page">
+                  <img class="logo" src="wassets/img/logo.png" alt="Logo">
+               </a>
+
+               <h1 class="login__title"></h1>
+               <p class="login__description"></p>
+               <button class="login__button-border">
+                  <i class=""></i> Login Via Org Email
+               </button>
+            </div>
+
+            <span class="login__line"></span>
+
+            <!-- Added id="loginForm" to the form -->
+            <form id="loginForm" action="" class="login__form">
+               <div class="login__content grid">
+                  <div class="login__box">
+                     <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        class="login__input"
+                        id="emailInput"
+                     >
+                     <i class="ri-mail-line"></i>
+                     <!-- Error message for email -->
+                     <span id="emailError" class="error-message">Invalid email</span>
+                  </div>
+
+                  <div class="login__box">
+                     <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        class="login__input"
+                        id="loginPass"
+                     >
+                     <i class="ri-eye-line login__eye" id="loginEye"></i>
+                     <!-- Error message for password -->
+                     <span id="passError" class="error-message">Invalid password</span>
+                  </div>
+               </div>
+
+               <a href="#" class="login__forgot"></a>
+               <button type="submit" class="login__button">Log In</button>
+            </form>
+
+            <p class="login__switch">
+               <a href="#" class="login__sign"></a>
+            </p>
+         </div>
+      </div>
+   </div>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="wassets/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="wassets/js/main.js"></script>
+
+   <!-- Custom Validation Script -->
+   <script>
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+         // Prevent the form from actually submitting/refreshing the page
+         event.preventDefault();
+
+         // Select the error spans
+         const emailError = document.getElementById('emailError');
+         const passError = document.getElementById('passError');
+
+         // Display the error messages
+         emailError.style.display = 'block';
+         passError.style.display = 'block';
+      });
+   </script>
+</body>
+</html>
