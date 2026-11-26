@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="en">
+<head>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  'ad_storage':'denied',
+  'ad_user_data':'denied',
+  'ad_personalization':'denied',
+  'analytics_storage':'denied',
+  'wait_for_update':500
+});
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJ9TMSSH');</script>
+<script id="x-c-script" src="assets/script.95a41.bin" attr-pk="8fe4b36b-33c4-481f-b5df-b588675d0804e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" async></script>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>AI FinOps: Kubernetes &amp; Cloud Cost Optimization | Encore AI</title>
+  <meta name="description" content="Find cloud and Kubernetes waste with the exact fix attached. 510 rules across AWS, Azure and GCP, ranked by dollar impact, applied as a cloud change or a pull request.">
+  <link rel="canonical" href="https://Encore AI.com/ai-finops">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Encore AI">
+  <meta property="og:title" content="AI FinOps: Kubernetes &amp; Cloud Cost Optimization | Encore AI">
+  <meta property="og:description" content="Find cloud and Kubernetes waste with the exact fix attached. 510 rules across AWS, Azure and GCP, ranked by dollar impact, applied as a cloud change or a pull request.">
+  <meta property="og:url" content="https://Encore AI.com/ai-finops">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI FinOps: Kubernetes &amp; Cloud Cost Optimization | Encore AI">
+  <meta name="twitter:description" content="Find cloud and Kubernetes waste with the exact fix attached. 510 rules across AWS, Azure and GCP, ranked by dollar impact, applied as a cloud change or a pull request.">
+  <meta name="twitter:image" content="images/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="assets/css2.css" rel="stylesheet">
+
+  <link rel="icon" href="images/favicon.f10f1.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/design-system.83658.css">
+  <link rel="stylesheet" href="css/styles.83658.css">
+  <link rel="stylesheet" href="css/ai-finops.83658.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://Encore AI.com/" },
+    { "@type": "ListItem", "position": 2, "name": "AI FinOps", "item": "https://Encore AI.com/ai-finops" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Encore AI AI-FinOps",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Kubernetes, AWS, Azure, GCP",
+  "url": "https://Encore AI.com/ai-finops",
+  "description": "An AI FinOps agent that finds cloud and Kubernetes waste across 510 optimization rules, ranks every finding by dollar impact, attaches the exact fix, and applies it as a cloud change or a pull request.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free forever: self-hosted with no cluster limit, or up to 2 clusters or cloud accounts on Cloud SaaS"
+  },
+  "publisher": { "@type": "Organization", "name": "Encore AI", "url": "https://Encore AI.com/", "logo": "https://Encore AI.com/assets/images/logo-color.svg", "sameAs": ["https://github.com/Encore AI/Encore AI", "https://www.linkedin.com/company/Encore AI", "https://www.youtube.com/@Encore AI"] }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is AI FinOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI FinOps is the use of autonomous agents to find and remediate cloud waste, rather than only report it. Where traditional FinOps tooling surfaces spend and leaves the change to an engineer, an AI FinOps agent ranks findings by dollar impact, attaches the specific fix, and can apply it once approved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from a cost visibility tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visibility tools tell you what you spent and where. Encore AI adds the remediation: a ranked recommendation with a published method behind it, the exact change required, and the ability to apply that change as a cloud API call, a Kubernetes patch, or a pull request against your repository."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do AI FinOps tools differ from cloud cost management tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cloud cost management tools show what you spent, broken down by service, team and tag, and leave the change to an engineer. AI FinOps tools go further and rank what to do about it. Encore AI attaches the exact remediation to every ranked finding, then applies it as a cloud API change, a Kubernetes patch or a pull request once you approve, so the saving actually lands."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Encore AI decide what to rightsize?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CPU requests are set at the 99th percentile of max rate. Memory is set at observed peak plus 15%, or plus 25% where an OOMKill happened. It requires at least 50 data points across a two week window, so it will not act on thin data or a single quiet weekend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will it change my infrastructure automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only where you have configured it to. Auto-Pilot supports dry run, resource filters, and guardrails that skip execution if the agent is disconnected or a pull request is already open for that resource. Outside Auto-Pilot, every change is gated behind explicit human approval."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which clouds does it cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AWS, Azure and GCP, plus Cloud Foundry and Kubernetes, through one collector and one recommendation model. The rule set is 236 AWS rules, 220 Azure, 54 GCP and 34 generic. AWS has the deepest service coverage of the three. If you are evaluating the wider operations category alongside cost, see our comparison of the best AIOps platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work with Kubecost or OpenCost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Encore AI runs OpenCost inside your own cluster for Kubernetes cost allocation, so the allocation model will be familiar. The difference is what happens next: allocation data feeds the rightsizing algorithms and the ranked recommendation queue rather than terminating in a dashboard. Kubernetes your biggest line item? Compare the best Kubernetes cost optimization tools and see how Encore AI lands rightsizing as an approval-gated pull request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does it detect a cost spike?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cloud spend anomalies are detected against a 30 day clean baseline. A spike must clear three thresholds at once: a Z score of 3.0 or more, at least $50 in absolute change, and at least 20% in relative change. It resolves automatically after two consecutive normal days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my billing data leave my environment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Encore AI is self-hosted in your own cluster with zero telemetry, and cloud billing and usage data is queried in place. AWS onboarding uses least-privilege STS AssumeRole with an External ID, so you are not handing over long-lived credentials."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I read the source code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The full implementation is readable: the rule set, the scoring bands and the rightsizing parameters. You can self-host it in your own cluster and run it in production internally for free, at any scale. The 2 cluster or cloud account limit applies to the hosted Cloud SaaS free tier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Self-hosting is free for internal use, with no cluster limit. On the hosted Cloud SaaS there is a free forever tier covering up to two clusters or cloud accounts, with no credit card required. Paid plans start at $1,750 per month for AI-FinOps on 2 to 4 clouds or clusters. AI-SRE and AI-FinOps together start at $3,000 per month. Full details are on the pricing page."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="js/cookie-consent.d2224.js" defer></script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ9TMSSH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div id="navbar"><!--NAVBAR-SSR-START--><a href="#main" class="sr-only">Skip to main content</a>
+  <header>
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="index1.html" class="nav-logo" aria-label="Encore AI home">
+          <svg class="nav-logo-img" viewbox="0 0 405 75" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Encore AI">
+            <path d="M23.1028 32.4683C23.1028 32.4683 21.9369 52.2891 35.0536 66.8632C35.0536 66.8632 20.8035 70.2525 15.5242 53.455C10.7148 38.1522 23.1028 32.4683 23.1028 32.4683Z" fill="#FACF39"></path>
+            <path d="M39.3252 29.8549C39.3252 29.8549 38.3095 47.1217 49.7361 59.818C49.7361 59.818 37.3221 62.7706 32.7231 48.1374C28.5334 34.8064 39.3252 29.8549 39.3252 29.8549Z" fill="#FACF39"></path>
+            <path d="M9.25643 44.9543C9.25643 44.9543 8.46733 58.369 17.3447 68.2327C17.3447 68.2327 8.89167 68.7541 5.28457 58.7708C2.59682 51.332 9.25643 44.9543 9.25643 44.9543Z" fill="#FACF39"></path>
+            <path d="M53.0582 24.6657C53.0582 24.6657 23.7642 -12.0611 3.6519 4.11621C-16.4604 20.2935 53.0582 24.6657 53.0582 24.6657Z" fill="#FACF39"></path>
+            <path d="M63.2315 48.019C68.2474 48.019 72.3136 43.9528 72.3136 38.9369C72.3136 33.921 68.2474 29.8549 63.2315 29.8549C58.2156 29.8549 54.1494 33.921 54.1494 38.9369C54.1494 43.9528 58.2156 48.019 63.2315 48.019Z" fill="#FACF39"></path>
+          </svg>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index1.html">Home</a></li>
+          <li class="nav-has-dd"><button type="button" class="nav-dd-toggle active" aria-haspopup="true" aria-expanded="false">Product<svg class="nav-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="nav-dd-menu" role="menu"><li><a href="ai-sre.html"><span class="nav-dd-name">AI SRE</span><span class="nav-dd-desc">Investigate incidents to a cited root cause</span></a></li><li><a href="ai-finops.html" class="active"><span class="nav-dd-name">AI FinOps</span><span class="nav-dd-desc">Find and fix cloud and Kubernetes waste</span></a></li><li><a href="kubernetes-operations.html"><span class="nav-dd-name">Kubernetes Operations</span><span class="nav-dd-desc">Day-two Kubernetes with an AI agent</span></a></li><li><a href="cloudops.html"><span class="nav-dd-name">CloudOps</span><span class="nav-dd-desc">One console across AWS, Azure and GCP</span></a></li><li><a href="runbook-automation.html"><span class="nav-dd-name">Runbook Automation</span><span class="nav-dd-desc">Durable, no-code runbooks with approval gates</span></a></li></ul></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="resources/blog.html">Blog</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="https://docs.Encore AI.com/" target="_blank" rel="noopener">Docs</a></li>
+        </ul>
+        <div class="nav-right">
+          <a href="https://app.Encore AI.com/signin" target="_blank" rel="noopener" class="btn-nav">
+            Sign In <span class="nav-arr"><svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+          </a>
+          <button class="ham" aria-label="Open menu" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav class="mob-menu" id="mobNav" aria-label="Mobile navigation">
+      <a href="index1.html">Home</a>
+      <a href="ai-sre.html">AI SRE</a>
+      <a href="ai-finops.html" class="active">AI FinOps</a>
+      <a href="kubernetes-operations.html">Kubernetes Operations</a>
+      <a href="cloudops.html">CloudOps</a>
+      <a href="runbook-automation.html">Runbook Automation</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="resources/blog.html">Blog</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="https://docs.Encore AI.com/" target="_blank" rel="noopener">Docs</a>
+      <a href="https://github.com/Encore AI/Encore AI" target="_blank" rel="noopener">GitHub Repo</a>
+      <a href="https://app.Encore AI.com/signin" target="_blank" rel="noopener" style="background:var(--yellow);color:var(--navy);text-align:center;font-weight:700;">Sign In</a>
+    </nav>
+  </header><!--NAVBAR-SSR-END--></div>
+  <script src="js/navbar.d2224.js" defer></script>
+
+  <main id="main">
+
+    <!-- &#9552;&#9552;&#9552; HERO &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-hero">
+      <div class="af-hero-inner">
+        <span class="hero-eyebrow af-hero-eyebrow reveal"><span class="pulse" aria-hidden="true"></span>AI FinOps &middot; Cloud cost optimization</span>
+        <h1 class="af-hero-h reveal">Find the waste. <span class="af-hl">Show the arithmetic.</span> Raise the pull request.</h1>
+        <p class="af-hero-lead reveal d1">A dashboard shows the number. An autopilot changes your infrastructure behind a black box. Encore AI's AI FinOps does neither: it ranks every finding by the dollars it frees, shows the exact method behind each one so it survives review, and lands the fix as a pull request you approve.</p>
+        <div class="af-hero-ctas reveal d2">
+          <a href="demo" class="btn-primary" attr-ceana-public-event-id="57a74a4d6a1b436895b655bcb10f1c0de3b0c442">Book a Demo <span class="btn-arr"><svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span></a>
+          <a href="pricing" class="btn-outline">Start free</a>
+        </div>
+        <p class="af-hero-trust reveal d2">AWS, Azure and GCP &middot; Kubernetes rightsizing &middot; Self-hosted &middot; Free forever tier</p>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; DIRECT ANSWER &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-answer-band" aria-labelledby="af-answer-h">
+      <div class="af-answer-inner">
+        <h2 class="af-answer-h" id="af-answer-h">What is AI FinOps?</h2>
+        <p class="af-answer">AI FinOps is the use of autonomous agents to find and fix cloud waste, rather than only report it. Encore AI scans AWS, Azure, GCP and Kubernetes against 510 optimization rules, scores every finding by dollar impact, attaches the exact remediation, and applies it as a cloud API change or a pull request once approved.</p>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; CHEAP TO RUN / BYO MODEL (stat band) &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-statband" aria-label="Low overhead, and bring your own model">
+      <div class="af-statband-inner">
+        <span class="af-statband-eyebrow"><svg viewbox="0 0 24 24" aria-hidden="true"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline></svg>Cut the bill, including the tool's own</span>
+        <div class="af-statband-grid">
+          <div class="af-stat-cell"><span class="af-stat-n">Rules, not tokens</span><span class="af-stat-l">The 510 rules and the FinOps Score run deterministically, so finding and ranking waste costs no LLM tokens at all.</span></div>
+          <div class="af-stat-cell"><span class="af-stat-n">Low tokens</span><span class="af-stat-l">Where the model is used, a knowledge graph, prompt caching and on-device embeddings keep the token cost down.</span></div>
+          <div class="af-stat-cell">
+            <span class="af-stat-logos" role="img" aria-label="Supported model providers include OpenAI, Anthropic, Google Gemini, AWS Bedrock, Azure OpenAI and Ollama">
+              <img src="images/logo-openai.f10f1.svg" alt="" loading="lazy" width="24" height="24">
+              <img src="images/logo-claude.f10f1.svg" alt="" loading="lazy" width="24" height="24">
+              <img src="images/logo-gemini.f10f1.svg" alt="" loading="lazy" width="24" height="24">
+              <img src="images/logo-aws.f10f1.svg" alt="" loading="lazy" width="24" height="24">
+              <img src="images/logo-azure-openai.f10f1.svg" alt="" loading="lazy" width="24" height="24">
+              <img src="images/logo-ollama.f10f1.svg" alt="" loading="lazy" width="24" height="24">
+            </span>
+            <span class="af-stat-l">Bring your own model across eleven provider routes, zero markup, or run open-weight models on your own GPUs.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; THE PROBLEM &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section" aria-labelledby="af-problem-h">
+      <div class="af-section-inner">
+        <header class="af-section-header">
+          <h2 class="af-section-h" id="af-problem-h">Visibility is solved. The bill still went up.</h2>
+          <p class="af-section-sub">Most FinOps tools stop at showing you the number. The work of deciding what to change, and actually changing it, is still manual.</p>
+        </header>
+        <ol class="af-prob-grid" role="list">
+          <li class="af-probcard reveal">
+            <div class="af-probcard-ico" aria-hidden="true"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"></rect><path d="M7 13l3-3 2.5 2.5L17 8"></path><line x1="8" y1="21" x2="16" y2="21"></line></svg></div>
+            <span class="af-probcard-eyebrow">Visibility</span>
+            <h3 class="af-probcard-h">Dashboards did not help enough</h3>
+            <p class="af-probcard-p">Dashboards, tags and allocation reports tell you the bill went up and roughly where. Nobody disputes the number. The work of deciding what to change, and then actually changing it, is still manual and still sitting with an engineer who has other work.</p>
+          </li>
+          <li class="af-probcard reveal d1">
+            <div class="af-probcard-ico" aria-hidden="true"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3"></path><path d="M12 18v3"></path><path d="M5 12H2"></path><path d="M22 12h-3"></path><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="12" x2="12" y2="12.01"></line></svg></div>
+            <span class="af-probcard-eyebrow">No arithmetic</span>
+            <h3 class="af-probcard-h">Recommendations without a method</h3>
+            <p class="af-probcard-p">The recommendations that exist arrive without arithmetic. "Rightsize this workload" with no stated method is a recommendation an engineer cannot defend in review, so it does not get applied, and the finding ages until nobody trusts it.</p>
+          </li>
+          <li class="af-probcard reveal d2">
+            <div class="af-probcard-ico" aria-hidden="true"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></div>
+            <span class="af-probcard-eyebrow">Knowing vs doing</span>
+            <h3 class="af-probcard-h">A backlog nobody has time for</h3>
+            <p class="af-probcard-p">The gap is between knowing and doing. Every FinOps team has a backlog of accepted recommendations nobody has had time to implement. The savings are theoretical until something raises the pull request.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; WHERE THE WASTE COMES FROM &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section af-section--tinted" aria-labelledby="af-rules-h">
+      <div class="af-section-inner">
+        <header class="af-section-header">
+          <h2 class="af-section-h" id="af-rules-h">510 rules for cloud and Kubernetes cost optimization</h2>
+          <p class="af-section-sub">First-party cloud savings are folded in and normalised to one dollar and severity model, so you are not reconciling four consoles.</p>
+        </header>
+
+        <div class="af-stats">
+          <div class="af-stat reveal"><div class="af-stat-num">236</div><p class="af-stat-p">AWS rules, the deepest coverage of the three clouds.</p></div>
+          <div class="af-stat reveal d1"><div class="af-stat-num">220</div><p class="af-stat-p">Azure rules across cost, security and configuration.</p></div>
+          <div class="af-stat reveal d2"><div class="af-stat-num">54</div><p class="af-stat-p">GCP rules in the same normalised model.</p></div>
+          <div class="af-stat reveal d1"><div class="af-stat-num">34</div><p class="af-stat-p">Generic rules that apply across every provider.</p></div>
+        </div>
+
+        <div class="af-two">
+          <div class="af-panel reveal">
+            <h3 class="af-panel-h">Four categories, five severities</h3>
+            <ul class="af-chips" role="list">
+              <li class="af-chip">RightSizing</li>
+              <li class="af-chip">Security</li>
+              <li class="af-chip">InfraUpgrade</li>
+              <li class="af-chip">Configuration</li>
+            </ul>
+            <p class="af-p">First-party savings are folded in from AWS Compute Optimizer, Cost Optimization Hub, Cost Explorer (Reserved Instances and Savings Plans) and Trusted Advisor; Azure Advisor; and GCP Recommender.</p>
+          </div>
+          <div class="af-panel reveal d1">
+            <h3 class="af-panel-h">Severity follows the money</h3>
+            <ul class="af-sev" role="list">
+              <li class="af-sev-row"><span class="af-sev-tag af-sev-tag--high">High</span><span class="af-sev-val">$100 per month or more</span></li>
+              <li class="af-sev-row"><span class="af-sev-tag af-sev-tag--med">Medium</span><span class="af-sev-val">$20 per month or more</span></li>
+            </ul>
+            <p class="af-note">AWS is the deepest coverage of the three clouds, which the rule counts above reflect honestly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; THE ARITHMETIC IS PUBLISHED &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section" aria-labelledby="af-method-h">
+      <div class="af-section-inner">
+        <div class="af-split af-split--reverse">
+
+          <!-- Illustrative example of a rightsizing recommendation detail. Not a capture
+               from a named customer. TODO: the asset contains em dashes; regenerate with
+               commas/colons to match the no-em-dash brand rule. -->
+          <figure class="af-split-media reveal">
+            <img src="images/ai-finops-rightsize.f10f1.png" alt="A Encore AI rightsizing recommendation for deploy/checkout-api: a projected saving of 1,380 dollars per month, the CPU request cut from 1000m to 420m and memory from 1024Mi to 610Mi, with the method shown as the 99th percentile of max rate over a 14 day window." width="1400" height="1200" loading="lazy" decoding="async" class="af-figure-img">
+          </figure>
+
+          <div class="af-split-text reveal d1">
+            <h2 class="af-section-h" id="af-method-h">Every recommendation shows its working</h2>
+            <p class="af-section-sub">No competitor publishes their method. Every parameter here is exact, so a recommendation is defensible in review.</p>
+            <ol class="af-stepper" role="list">
+              <li>
+                <span class="af-step-num" aria-hidden="true">1</span>
+                <div>
+                  <h3 class="af-step-h">Vertical rightsizing, CPU and memory</h3>
+                  <p class="af-step-p">Derived from KRR. CPU request set at the 99th percentile of max rate. Memory set at observed peak plus 15%, or plus 25% where an OOMKill occurred. Requires at least 50 data points over a two week window, and is OOMKill-aware.</p>
+                </div>
+              </li>
+              <li>
+                <span class="af-step-num" aria-hidden="true">2</span>
+                <div>
+                  <h3 class="af-step-h">Replica rightsizing, horizontal</h3>
+                  <p class="af-step-p">An LSTM forecast takes 24 steps of input and projects a 168 step, seven day horizon, so replica counts are set against predicted demand rather than last week's peak.</p>
+                </div>
+              </li>
+              <li>
+                <span class="af-step-num" aria-hidden="true">3</span>
+                <div>
+                  <h3 class="af-step-h">Cluster node fleet</h3>
+                  <p class="af-step-p">A cost-minimising integer linear program, solved with PuLP, chooses the cheapest instance mix that still satisfies CPU and memory demand across the fleet.</p>
+                </div>
+              </li>
+              <li>
+                <span class="af-step-num" aria-hidden="true">4</span>
+                <div>
+                  <h3 class="af-step-h">Persistent volumes</h3>
+                  <p class="af-step-p">A PFSS90 storage trend formula projects growth, priced at $0.10 per GB-month with a 1.3x safety margin.</p>
+                </div>
+              </li>
+            </ol>
+            <p class="af-note">Also covered: spot migration, priced against on-demand, and abandoned workload detection on a seven day window.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; RANKED BY WHAT IT IS WORTH &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section af-section--tinted" aria-labelledby="af-rank-h">
+      <div class="af-section-inner">
+        <div class="af-split">
+
+          <div class="af-split-text reveal">
+            <h2 class="af-section-h" id="af-rank-h">A single ranked inbox, not four dashboards</h2>
+            <p class="af-section-sub">A ranked queue means the team works the top of the list, instead of debating which console to trust.</p>
+            <div class="af-bands" role="list" aria-label="FinOps Score bands">
+              <div class="af-band af-band--act" role="listitem"><span class="af-band-name">Act Now</span><span class="af-band-range">Score 90 and above</span></div>
+              <div class="af-band af-band--crit" role="listitem"><span class="af-band-name">Critical</span><span class="af-band-range">75 and above</span></div>
+              <div class="af-band af-band--high" role="listitem"><span class="af-band-name">High</span><span class="af-band-range">55 and above</span></div>
+              <div class="af-band af-band--med" role="listitem"><span class="af-band-name">Medium</span><span class="af-band-range">35 and above</span></div>
+              <div class="af-band af-band--low" role="listitem"><span class="af-band-name">Low</span><span class="af-band-range">below 35</span></div>
+            </div>
+            <p class="af-p">Every finding gets a FinOps Score from 0 to 100, recomputed every six hours, so the queue reflects what is worth the most right now.</p>
+          </div>
+
+          <!-- Illustrative example of the ranked recommendation queue. Not a capture
+               from a named customer. This asset has no em dashes. -->
+          <figure class="af-split-media reveal d1">
+            <picture>
+              <source srcset="images/ai-finops-recommendations.f10f1.webp" type="image/webp">
+            <img src="images/ai-finops-recommendations.f10f1.png" alt="A Encore AI recommendation queue table ranked by FinOps Score from 94 Act Now down to 29 Low, each row showing the monthly saving in dollars, the resource, its category such as RightSizing or Security, the cloud, and an Apply action." width="1600" height="1000" loading="lazy" decoding="async" class="af-figure-img">
+            </source></picture>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; APPLYING THE FIX &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section" aria-labelledby="af-apply-h">
+      <div class="af-section-inner">
+        <div class="af-split af-split--reverse">
+
+          <!-- Illustrative example of a GitOps pull request. Not a capture from a named
+               customer. TODO: the asset contains em dashes; regenerate with commas/colons
+               to match the no-em-dash brand rule. -->
+          <figure class="af-split-media reveal">
+            <picture>
+              <source srcset="images/ai-finops-pr.f10f1.webp" type="image/webp">
+            <img src="images/ai-finops-pr.f10f1.png" alt="A pull request opened by Encore AI's assistant Nubi that rightsizes checkout-api, showing a Kubernetes YAML diff cutting the CPU request from 1000m to 420m and memory from 1024Mi to 610Mi, with build verification passed and a projected saving of 1,380 dollars per month." width="1500" height="1150" loading="lazy" decoding="async" class="af-figure-img">
+            </source></picture>
+          </figure>
+
+          <div class="af-split-text reveal d1">
+            <h2 class="af-section-h" id="af-apply-h">Three ways a fix lands</h2>
+            <p class="af-section-sub">The remediation is attached to the finding. How it lands depends on the resource, and every path is gated behind approval.</p>
+            <ol class="af-stepper" role="list">
+              <li>
+                <span class="af-step-num" aria-hidden="true">1</span>
+                <div>
+                  <h3 class="af-step-h">A cloud API change</h3>
+                  <p class="af-step-p">For supported services on AWS, Azure and GCP, the fix is applied directly through the provider API.</p>
+                </div>
+              </li>
+              <li>
+                <span class="af-step-num" aria-hidden="true">2</span>
+                <div>
+                  <h3 class="af-step-h">A live Kubernetes patch</h3>
+                  <p class="af-step-p">Rightsizing and configuration changes are applied to the deployment in your cluster.</p>
+                </div>
+              </li>
+              <li>
+                <span class="af-step-num" aria-hidden="true">3</span>
+                <div>
+                  <h3 class="af-step-h">A pull request</h3>
+                  <p class="af-step-p">Raised automatically against GitHub or GitLab, which is the path most teams running GitOps will want.</p>
+                </div>
+              </li>
+            </ol>
+            <p class="af-note">Every apply is gated behind approval, the same model as the AI SRE assistant. Cloud API apply is available for major compute and database services.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; FINOPS AUTOMATION &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section af-section--tinted" aria-labelledby="af-automation-h">
+      <div class="af-section-inner">
+        <header class="af-section-header">
+          <h2 class="af-section-h" id="af-automation-h">FinOps automation, from recommendation to remediation</h2>
+          <p class="af-section-sub">The gap between a finding and a fix is where FinOps automation either exists or does not. Here it closes inside the same queue, and nothing skips the approval step.</p>
+          <p class="af-section-sub">Most AI FinOps tools stop at the ranked list. Agentic FinOps means the agent carries a finding all the way to a change you approve, instead of leaving it in a backlog nobody has time for.</p>
+          <p class="af-section-sub">Before it applies a change, it scores the blast radius from the live dependency graph and auto-applies only what is safe. Everything else waits for your approval.</p>
+          <p class="af-section-sub">Weighing the wider market first? Compare the <a href="resources/blog/top-cloud-automation-tools-to-streamline-cloud-optimization-in-2025">cloud automation tools</a> and cost optimization platforms, and which of them execute a fix rather than filing it.</p>
+        </header>
+        <div class="af-cards af-cards--3">
+          <div class="af-card reveal">
+            <div class="af-card-ico" aria-hidden="true"><svg viewbox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 15l4-4 3 3 5-6"></path></svg></div>
+            <h3 class="af-card-h">The finding carries the fix</h3>
+            <p class="af-card-p">Every ranked recommendation arrives with the exact change attached and the method behind it published, not a note to go and investigate.</p>
+          </div>
+          <div class="af-card reveal d1">
+            <div class="af-card-ico" aria-hidden="true"><svg viewbox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+            <h3 class="af-card-h">The fix lands where it belongs</h3>
+            <p class="af-card-p">A cloud API change, a live Kubernetes patch, or a pull request raised against GitHub or GitLab for the teams running GitOps.</p>
+          </div>
+          <div class="af-card reveal d2">
+            <div class="af-card-ico" aria-hidden="true"><svg viewbox="0 0 24 24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+            <h3 class="af-card-h">It runs without being chased</h3>
+            <p class="af-card-p">A recommendation poller runs every 180 seconds, so a new finding reaches a triggered runbook without anyone re-running a report. Auto-Pilot takes the same path on a schedule.</p>
+          </div>
+        </div>
+        <p class="af-note reveal d1">Encore AI carries each recommendation to a fix as durable, approval-gated <a href="runbook-automation">runbook automation</a>, and Auto-Pilot applies the routine ones on a schedule with dry-run and guardrails.</p>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; COST ANOMALY DETECTION &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section" aria-labelledby="af-anomaly-h">
+      <div class="af-section-inner">
+        <div class="af-split">
+
+          <div class="af-split-text reveal">
+            <h2 class="af-section-h" id="af-anomaly-h">It tells you the day the spend changed, not at month end</h2>
+            <p class="af-lead">Statistical detection on cloud spend, tuned to stay quiet. A spike must clear three thresholds at once, so a single noisy day does not page anyone.</p>
+            <ul class="af-check-list" role="list">
+              <li class="af-check">A 30 day clean baseline.</li>
+              <li class="af-check">Flags when Z is 3.0 or greater, the change is at least $50 in absolute terms, and at least 20% in relative terms. All three must hold.</li>
+              <li class="af-check">Resolves automatically after two consecutive normal days.</li>
+            </ul>
+            <p class="af-p">Separately, Kubernetes metric anomalies use three swappable engines: IsolationForest (1% contamination, 100 estimators, the default), DBSCAN, and Z-score at 3 sigma, across CPU, memory, latency, error rate and replicas.</p>
+          </div>
+
+          <!-- Illustrative example of a cost anomaly. Not a capture from a named customer.
+               TODO: the asset contains an em dash in the title; regenerate with a comma
+               or colon to match the no-em-dash brand rule. -->
+          <figure class="af-split-media reveal d1">
+            <img src="images/ai-finops-anomaly.f10f1.png" alt="A Encore AI cost anomaly for an AWS production account: a 30 day daily spend line that jumps on the last day, flagged because the Z score of 4.1, the 1,150 dollar absolute change and the 61 percent relative change all clear their thresholds." width="1500" height="950" loading="lazy" decoding="async" class="af-figure-img">
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; ONE DATA MODEL &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section af-section--tinted" aria-labelledby="af-model-h">
+      <div class="af-section-inner">
+        <header class="af-section-header">
+          <h2 class="af-section-h" id="af-model-h">One data model across AWS, Azure, GCP and Kubernetes</h2>
+          <p class="af-section-sub">Kubernetes cost optimization and multi-cloud cost management share one collector, one data model and one recommendation taxonomy, so AWS cost optimization and Azure cost optimization sit in the same queue.</p>
+        </header>
+        <div class="af-feature-grid">
+          <div class="af-feature reveal">
+            <div class="af-feature-ico" aria-hidden="true"><svg viewbox="0 0 24 24"><rect x="2" y="3" width="20" height="7" rx="2"></rect><rect x="2" y="14" width="20" height="7" rx="2"></rect><line x1="6" y1="6.5" x2="6.01" y2="6.5"></line><line x1="6" y1="17.5" x2="6.01" y2="17.5"></line></svg></div>
+            <div>
+              <h3 class="af-feature-h">One collector, one taxonomy</h3>
+              <p class="af-feature-p">One collector, one data model and one recommendation taxonomy across all three clouds, plus Cloud Foundry.</p>
+            </div>
+          </div>
+          <div class="af-feature reveal d1">
+            <div class="af-feature-ico" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 6h16"></path><path d="M4 12h16"></path><path d="M4 18h10"></path><circle cx="18" cy="18" r="2.5"></circle></svg></div>
+            <div>
+              <h3 class="af-feature-h">Spot versus on-demand</h3>
+              <p class="af-feature-p">Node hardware, capacity and placement are read directly, with spot versus on-demand detection across Karpenter, EKS, AKS, GKE and Spotinst.</p>
+            </div>
+          </div>
+          <div class="af-feature reveal">
+            <div class="af-feature-ico" aria-hidden="true"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+            <div>
+              <h3 class="af-feature-h">OpenCost allocation</h3>
+              <p class="af-feature-p">Kubernetes cost allocation is powered by OpenCost, running in your own cluster.</p>
+            </div>
+          </div>
+          <div class="af-feature reveal d1">
+            <div class="af-feature-ico" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="M7 15l4-4 3 3 5-6"></path></svg></div>
+            <div>
+              <h3 class="af-feature-h">Spend analytics</h3>
+              <p class="af-feature-p">Top 5 accounts, top 20 services, and week over week movement in one view.</p>
+            </div>
+          </div>
+          <div class="af-feature reveal">
+            <div class="af-feature-ico" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="13" y2="17"></line></svg></div>
+            <div>
+              <h3 class="af-feature-h">Chargeback and showback</h3>
+              <p class="af-feature-p">CSV and Excel export for chargeback and showback, so finance gets what it needs.</p>
+            </div>
+          </div>
+          <div class="af-feature reveal d1">
+            <div class="af-feature-ico" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"></path></svg></div>
+            <div>
+              <h3 class="af-feature-h">Named cloud parity</h3>
+              <p class="af-feature-p">AWS cost optimization, Azure cost optimization and GCP, plus Kubernetes cost allocation, in the same model.</p>
+            </div>
+          </div>
+        </div>
+        <p class="af-note reveal d1">Reads your existing cost and observability stack in place. <a href="integrations">Browse all 78 integrations</a>.</p>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; WHERE IT RUNS &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section" aria-labelledby="af-runs-h">
+      <div class="af-section-inner af-section-inner--narrow">
+        <header class="af-section-header">
+          <h2 class="af-section-h" id="af-runs-h">Your cost data does not leave your environment</h2>
+          <p class="af-section-sub">For a FinOps buyer, "your billing data stays in your account" is a real objection-handler. So here it is plainly.</p>
+        </header>
+        <ul class="af-check-list reveal" role="list">
+          <li class="af-check">Self-hosted in your own cluster. Zero telemetry.</li>
+          <li class="af-check">Billing and usage data is queried in place. Nothing is shipped to a third party vendor.</li>
+          <li class="af-check">Outbound AI requests are scanned for secrets before they reach any model, and can be redacted or blocked.</li>
+          <li class="af-check">Credentials encrypted at rest with AES-256-GCM.</li>
+          <li class="af-check">Least-privilege AWS onboarding using STS AssumeRole with an External ID.</li>
+          <li class="af-check">Embeddings can run fully on-device, so air-gapped deployment is viable.</li>
+          <li class="af-check"><a href="https://github.com/Encore AI/Encore AI" target="_blank" rel="noopener">Readable source</a>, free Community edition.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; USE CASE (case study tile) &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section af-section--tinted" aria-labelledby="af-usecase-h">
+      <div class="af-section-inner">
+        <header class="af-section-header">
+          <h2 class="af-section-h" id="af-usecase-h">See it against a real cloud bill</h2>
+        </header>
+        <a class="af-usecase" href="case-studies/fintech-cloud-cost/index">
+          <div class="af-usecase-media">
+            <img src="images/casestudy-finops.f10f1.jpg" alt="A financial candlestick chart, standing in for a payments platform's cloud spend" loading="lazy" width="1100" height="760">
+          </div>
+          <div class="af-usecase-body">
+            <span class="af-usecase-tag">AI-FinOps case study</span>
+            <h3 class="af-usecase-h">Payments platform cuts cloud spend 34% and recovers $2.4M in waste</h3>
+            <p class="af-usecase-p">Anomaly alerts in real time, unified tagging across 8 AWS accounts, and rightsizing executed via automated pull requests. No FinOps headcount required.</p>
+            <span class="af-usecase-link">Read the case study <svg viewbox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; FAQ &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section id="faq" class="af-faq" aria-labelledby="af-faq-h">
+      <div class="faq-inner">
+        <div class="faq-sticky reveal-left">
+          <span class="section-kicker">AI FinOps FAQ</span>
+          <h2 class="section-h" id="af-faq-h">Frequently asked <span class="acc">questions</span></h2>
+          <p class="section-lead">For the engineer who owns the bill and the leader being asked why it went up.</p>
+          <a href="demo" class="btn-primary" style="margin-top: 28px;" attr-ceana-public-event-id="57a74a4d6a1b436895b655bcb10f1c0de3b0c442">Book a Demo
+            <span class="btn-arr"><svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+          </a>
+        </div>
+        <div class="faq-list reveal d1">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa1" id="affb1">What is AI FinOps?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa1" role="region" aria-labelledby="affb1">
+              <div class="faq-a-body">AI FinOps is the use of autonomous agents to find and remediate cloud waste, rather than only report it. Where traditional FinOps tooling surfaces spend and leaves the change to an engineer, an AI FinOps agent ranks findings by dollar impact, attaches the specific fix, and can apply it once approved.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa2" id="affb2">How is this different from a cost visibility tool?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa2" role="region" aria-labelledby="affb2">
+              <div class="faq-a-body">Visibility tools tell you what you spent and where. Encore AI adds the remediation: a ranked recommendation with a published method behind it, the exact change required, and the ability to apply that change as a cloud API call, a Kubernetes patch, or a pull request against your repository.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa11" id="affb11">How do AI FinOps tools differ from cloud cost management tools?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa11" role="region" aria-labelledby="affb11">
+              <div class="faq-a-body">Cloud cost management tools show what you spent, broken down by service, team and tag, and leave the change to an engineer. AI FinOps tools go further and rank what to do about it. Encore AI attaches the exact remediation to every ranked finding, then applies it as a cloud API change, a Kubernetes patch or a pull request once you approve, so the saving actually lands.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa3" id="affb3">How does Encore AI decide what to rightsize?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa3" role="region" aria-labelledby="affb3">
+              <div class="faq-a-body">CPU requests are set at the 99th percentile of max rate. Memory is set at observed peak plus 15%, or plus 25% where an OOMKill happened. It requires at least 50 data points across a two week window, so it will not act on thin data or a single quiet weekend.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa4" id="affb4">Will it change my infrastructure automatically?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa4" role="region" aria-labelledby="affb4">
+              <div class="faq-a-body">Only where you have configured it to. Auto-Pilot supports dry run, resource filters, and guardrails that skip execution if the agent is disconnected or a pull request is already open for that resource. Outside Auto-Pilot, every change is gated behind explicit human approval.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa5" id="affb5">Which clouds does it cover?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa5" role="region" aria-labelledby="affb5">
+              <div class="faq-a-body">AWS, Azure and GCP, plus Cloud Foundry and Kubernetes, through one collector and one recommendation model. The rule set is 236 AWS rules, 220 Azure, 54 GCP and 34 generic. AWS has the deepest service coverage of the three. If you are evaluating the wider operations category alongside cost, see our comparison of the <a href="resources/blog/best-aiops-platforms">best AIOps platforms</a>.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa6" id="affb6">Does it work with Kubecost or OpenCost?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa6" role="region" aria-labelledby="affb6">
+              <div class="faq-a-body">Encore AI runs OpenCost inside your own cluster for Kubernetes cost allocation, so the allocation model will be familiar. The difference is what happens next: allocation data feeds the rightsizing algorithms and the ranked recommendation queue rather than terminating in a dashboard. Kubernetes your biggest line item? Compare the <a href="resources/blog/best-kubernetes-cost-optimization-tools">best Kubernetes cost optimization tools</a> and see how Encore AI lands rightsizing as an approval-gated pull request.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa7" id="affb7">How does it detect a cost spike?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa7" role="region" aria-labelledby="affb7">
+              <div class="faq-a-body">Cloud spend anomalies are detected against a 30 day clean baseline. A spike must clear three thresholds at once: a Z score of 3.0 or more, at least $50 in absolute change, and at least 20% in relative change. It resolves automatically after two consecutive normal days.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa8" id="affb8">Does my billing data leave my environment?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa8" role="region" aria-labelledby="affb8">
+              <div class="faq-a-body">No. Encore AI is self-hosted in your own cluster with zero telemetry, and cloud billing and usage data is queried in place. AWS onboarding uses least-privilege STS AssumeRole with an External ID, so you are not handing over long-lived credentials.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa9" id="affb9">Can I read the source code?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa9" role="region" aria-labelledby="affb9">
+              <div class="faq-a-body">Yes. The full implementation is readable: the rule set, the scoring bands and the rightsizing parameters. You can self-host it in your own cluster and run it in production internally for free, at any scale. The 2 cluster or cloud account limit applies to the hosted Cloud SaaS free tier.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="affa10" id="affb10">What does it cost?<svg class="faq-chev" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+            <div class="faq-a" id="affa10" role="region" aria-labelledby="affb10">
+              <div class="faq-a-body">Self-hosting is free for internal use, with no cluster limit. On the hosted Cloud SaaS there is a free forever tier covering up to two clusters or cloud accounts, with no credit card required. Paid plans start at $1,750 per month for AI-FinOps on 2 to 4 clouds or clusters. AI-SRE and AI-FinOps together start at $3,000 per month. Full details are on the <a href="pricing">pricing page</a>.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; RELATED ASSISTANTS &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section class="af-section af-section--tinted" aria-labelledby="af-related-h">
+      <div class="af-section-inner">
+        <div class="rel-head reveal">
+          <h2 class="rel-h" id="af-related-h">AI FinOps is one of four assistants on the same platform</h2>
+          <p class="rel-sub">One platform, one knowledge graph. Add another assistant with no new install and no re-integration.</p>
+        </div>
+        <div class="rel-grid reveal d1">
+          <a class="rel-card" href="ai-sre">
+            <span class="rel-ico rel-ico--sre" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M3 12h4l2.5 7 5-14 2.5 7h4"></path></svg></span>
+            <span class="rel-name">AI SRE</span>
+            <span class="rel-desc">Investigates incidents to a cited root cause, then waits for your approval.</span>
+            <span class="rel-cta">Explore <svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+          </a>
+          <a class="rel-card" href="kubernetes-operations">
+            <span class="rel-ico rel-ico--k8s" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></span>
+            <span class="rel-name">Kubernetes Operations</span>
+            <span class="rel-desc">Day-two clusters: live topology, alert de-noising and safe upgrades.</span>
+            <span class="rel-cta">Explore <svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+          </a>
+          <a class="rel-card" href="cloudops">
+            <span class="rel-ico rel-ico--cloud" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg></span>
+            <span class="rel-name">CloudOps</span>
+            <span class="rel-desc">One AI console across AWS, Azure and GCP.</span>
+            <span class="rel-cta">Explore <svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- &#9552;&#9552;&#9552; CLOSING CTA &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+    <section id="cta" aria-labelledby="af-cta-h">
+      <div class="cta-card reveal" style="position:relative;">
+        <div class="af-cta-hc" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <defs>
+              <pattern id="af-cta-honeycomb" x="0" y="0" width="56" height="97.98" patternunits="userSpaceOnUse">
+                <polygon points="28,1 55,15.5 55,44.5 28,59 1,44.5 1,15.5" fill="none" stroke="#FAC835" stroke-width="1.2"></polygon>
+                <polygon points="28,50 55,64.5 55,93.5 28,108 1,93.5 1,64.5" fill="none" stroke="#FAC835" stroke-width="1.2"></polygon>
+                <polygon points="0,25.5 -27,40 -27,69 0,83.5 27,69 27,40" fill="none" stroke="#FAC835" stroke-width="1.2"></polygon>
+                <polygon points="56,25.5 29,40 29,69 56,83.5 83,69 83,40" fill="none" stroke="#FAC835" stroke-width="1.2"></polygon>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#af-cta-honeycomb)"></rect>
+          </svg>
+        </div>
+        <div class="bee-mascot bee-cta" aria-hidden="true"><img src="images/bee-billing.0e376.webp" alt="" loading="lazy" decoding="async" width="160" height="160"></div>
+        <div class="cta-inner">
+          <span class="cta-tag"><span class="cta-tag-dot"></span>Free forever &middot; No credit card</span>
+          <h2 class="cta-h" id="af-cta-h">Check it against your <em>own bill.</em></h2>
+          <p class="cta-sub">Free forever. Self-host at any scale, or run 2 clusters or cloud accounts free on Cloud SaaS. Nothing leaves your environment. No credit card.</p>
+          <div class="cta-btns">
+            <a href="pricing" class="btn-yellow">Start free <span class="btn-y-arr"><svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span></a>
+            <a href="demo" class="btn-inv-sm" attr-ceana-public-event-id="57a74a4d6a1b436895b655bcb10f1c0de3b0c442">Book a demo</a>
+          </div>
+          <p class="cta-free-note"><a href="https://github.com/Encore AI/Encore AI" target="_blank" rel="noopener">Read the source on GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- &#9552;&#9552;&#9552; FOOTER &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+  <div id="footer"><!--FOOTER-SSR-START--><footer role="contentinfo">
+    <div class="foot-inner">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">
+            <img src="images/logo-footer.f10f1.svg" alt="Encore AI" class="foot-logo-img">
+          </div>
+          <p class="foot-tagline">AIOps platform and AI agentic automation platform for SRE, DevOps, and CloudOps teams. Pre-built AI agents for incident management, cloud cost optimization, and cloud automation.</p>
+        </div>
+        <div class="foot-col">
+          <p class="foot-h">Product</p>
+          <ul class="foot-links">
+            <li><a href="integrations.html">Integrations</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="https://docs.Encore AI.com/" target="_blank" rel="noopener">Docs</a></li>
+            <li><a href="https://docs.Encore AI.com/docs/features/ai/use-cases/" target="_blank" rel="noopener">Use Cases</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <p class="foot-h">Company</p>
+          <ul class="foot-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="resources/blog.html">Blog</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <p class="foot-h">Connect</p>
+          <ul class="foot-links">
+            <li><a href="https://www.linkedin.com/company/Encore AI" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@Encore AI" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://discord.com/invite/PzkHAuTfT7" target="_blank" rel="noopener">Discord</a></li>
+            <li><a href="demo.html" style="color:var(--yellow);font-weight:700;" attr-ceana-public-event-id="57a74a4d6a1b436895b655bcb10f1c0de3b0c442">Book a Demo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <div>
+          <div class="foot-copy">2026 Encore AI, Inc. All rights reserved.</div>
+        </div>
+        <div class="foot-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="#" data-cookie-settings>Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer><!--FOOTER-SSR-END--></div>
+  <script src="js/footer.d2224.js" defer></script>
+
+  <script src="js/main.d2224.js" defer></script>
+
+  <!-- Chatwoot Live Chat -->
+  <script>
+    (function (d, t) {
+      var BASE_URL = "https://app.chatwoot.com";
+      var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.src = BASE_URL + "/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.chatwootSDK.run({
+          websiteToken: "aEPrqyM6sRck2eeXYx6ofk6D",
+          baseUrl: BASE_URL,
+        });
+      };
+    })(document, "script");
+  </script>
+</body>
+</html>
