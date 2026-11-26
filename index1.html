@@ -3664,70 +3664,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <script>
       (function (d, t) {
-        var BASE_URL = "https://app.chatwoot.com";
-        var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-        g.src = BASE_URL + "/packs/js/sdk.js";
-        g.defer = true;
-        g.async = true;
-        s.parentNode.insertBefore(g, s);
-        g.onload = function () {
-          window.chatwootSDK.run({
-            websiteToken: "aEPrqyM6sRck2eeXYx6ofk6D",
-            baseUrl: BASE_URL,
-          });
-        };
-      })(document, "script");
-    </script>
-    <script>
-      function switchAssistTab(target) {
-        var tabs = document.querySelectorAll(".assist-tab[data-assist]");
-        var panels = document.querySelectorAll(
-          ".assist-panel[data-assist-panel]",
-        );
-        tabs.forEach(function (t) {
-          t.classList.remove("active");
-          t.setAttribute("aria-selected", "false");
-        });
-        panels.forEach(function (p) {
-          p.classList.remove("active");
-        });
-        var activeTab = document.querySelector(
-          '.assist-tab[data-assist="' + target + '"]',
-        );
-        var activePanel = document.querySelector(
-          '.assist-panel[data-assist-panel="' + target + '"]',
-        );
-        if (activeTab) {
-          activeTab.classList.add("active");
-          activeTab.setAttribute("aria-selected", "true");
-        }
-        if (activePanel) activePanel.classList.add("active");
-      }
-      function openAgentsModal() {
-        var m = document.getElementById("agents-modal");
-        m.hidden = false;
-        document.body.style.overflow = "hidden";
-        setTimeout(function () {
-          m.classList.add("is-open");
-        }, 10);
-      }
-      function closeAgentsModal(e) {
-        if (e && e.target !== document.getElementById("agents-modal")) return;
-        var m = document.getElementById("agents-modal");
-        m.classList.remove("is-open");
-        setTimeout(function () {
-          m.hidden = true;
-          document.body.style.overflow = "";
-        }, 250);
-      }
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") closeAgentsModal();
-      });
-    </script>
-
-    <!-- Personalized briefing popup (auto-opens once per visitor) -->
-    <script src="js/briefing-popup.d2224.js" defer></script>
+        
 
   </body>
 </html>
