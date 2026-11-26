@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<?xml encoding="utf-8" ?><html lang="en">
+<head>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{
+  'ad_storage':'denied',
+  'ad_user_data':'denied',
+  'ad_personalization':'denied',
+  'analytics_storage':'denied',
+  'wait_for_update':500
+});
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJ9TMSSH');</script>
+<script id="x-c-script" src="../assets/script.95a41.bin" attr-pk="8fe4b36b-33c4-481f-b5df-b588675d0804e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" async></script>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B SaaS Saves $1.2M a Year on Kubernetes Costs - Encore AI</title>
+  <meta name="description" content="How a B2B SaaS company used Encore AI's AI-K8s Ops Assistant to rightsize 200+ Kubernetes clusters, save $1.2M/year, and reduce cluster management from 3 days to 15 minutes per month.">
+  <link rel="canonical" href="https://Encore AI.com/case-studies/saas-kubernetes-optimization">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Encore AI">
+  <meta property="og:title" content="B2B SaaS Rightsizes 200+ Kubernetes Clusters and Saves $1.2M/year with Encore AI">
+  <meta property="og:description" content="How a B2B SaaS company used Encore AI's AI-K8s Ops Assistant to rightsize 200+ Kubernetes clusters, save $1.2M/year, and reduce cluster management from 3 days to 15 minutes per month.">
+  <meta property="og:url" content="https://Encore AI.com/case-studies/saas-kubernetes-optimization">
+  <meta property="og:image" content="../images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="B2B SaaS Rightsizes 200+ Kubernetes Clusters and Saves $1.2M/year with Encore AI">
+  <meta name="twitter:description" content="How a B2B SaaS company used Encore AI's AI-K8s Ops Assistant to rightsize 200+ Kubernetes clusters, save $1.2M/year, and reduce cluster management from 3 days to 15 minutes per month.">
+  <meta name="twitter:image" content="../images/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="../assets/css2.css" rel="stylesheet">
+  <link rel="icon" href="../images/favicon.f10f1.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/design-system.83658.css">
+  <link rel="stylesheet" href="../css/styles.83658.css">
+  <link rel="stylesheet" href="../css/case-study.83658.css">
+  <link rel="stylesheet" href="../css/case-studies-hub.83658.css">
+  <style>
+    body { background: var(--off); }
+    .cs-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter); }
+    .cs-hero { background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 100%); padding: 100px 0 56px; position: relative; overflow: hidden; }
+    .cs-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 80% 50%, rgba(56,162,255,0.12) 0%, transparent 70%), radial-gradient(ellipse 40% 40% at 10% 80%, rgba(250,200,53,0.06) 0%, transparent 60%); pointer-events: none; }
+    .cs-hero-inner { position: relative; max-width: 740px; }
+    .cs-back { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.55); font-size: 0.85rem; font-weight: 500; margin-bottom: 28px; transition: color 0.2s; }
+    .cs-back:hover { color: rgba(255,255,255,0.9); }
+    .cs-back svg { width: 15px; height: 15px; stroke: currentColor; fill: none; }
+    .cs-hero-h { font-family: var(--fh); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #fff; letter-spacing: -0.035em; line-height: 1.08; margin-bottom: 16px; }
+    .cs-hero-h .hl { color: var(--yellow); }
+    .cs-hero-lead { font-size: 1.05rem; color: rgba(255,255,255,0.68); line-height: 1.72; }
+    .cs-img-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter); }
+    .cs-img { width: 100%; height: 300px; object-fit: cover; border-radius: var(--r-xl); display: block; margin-top: -20px; position: relative; z-index: 1; box-shadow: 0 20px 60px rgba(0,0,0,0.22); }
+    .cs-graphic { width: 100%; height: 360px; border-radius: var(--r-xl); display: block; margin-top: -20px; position: relative; z-index: 1; box-shadow: 0 20px 60px rgba(0,0,0,0.28); overflow: hidden; }
+    .cs-stats { background: var(--white); border-bottom: 1px solid var(--border); padding-top: 48px; padding-bottom: 32px; }
+    .cs-stats-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .cs-stat { text-align: center; padding: 16px 20px; border-right: 1px solid var(--border); }
+    .cs-stat:last-child { border-right: none; }
+    .cs-stat-n { font-family: var(--fh); font-size: clamp(1.8rem,3vw,2.4rem); font-weight: 800; color: var(--navy); line-height: 1; margin-bottom: 6px; }
+    .cs-stat-l { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+    .cs-body { padding: 56px 0 80px; }
+    .cs-layout { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 32px; align-items: start; }
+    .cs-narrative { min-width: 0; }
+    .cs-section { margin-bottom: 56px; scroll-margin-top: 110px; display: block !important; background: none !important; border: none !important; border-radius: 0 !important; padding: 0 !important; box-shadow: none !important; }
+    .cs-section-kicker { display: block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--purple); margin-bottom: 10px; }
+    .cs-section-h { font-family: var(--fh); font-size: clamp(1.4rem,2.2vw,1.8rem); font-weight: 800; color: var(--ink); letter-spacing: -0.03em; margin-bottom: 20px; line-height: 1.2; }
+    .cs-prose p { font-size: 1rem; color: var(--mid); line-height: 1.82; margin-bottom: 16px; }
+    .cs-prose p:last-child { margin-bottom: 0; }
+    .cs-feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0 24px; align-items: stretch; }
+    .cs-feat { background: var(--navy); border: none; border-radius: var(--r-lg); padding: 24px; display: flex; flex-direction: column; }
+    .cs-feat-icon { width: 38px; height: 38px; border-radius: var(--r-sm); background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; flex-shrink: 0; }
+    .cs-feat-icon svg { width: 18px; height: 18px; stroke: var(--yellow); stroke-width: 2; fill: none; }
+    .cs-feat-title { font-family: var(--fh); font-size: 0.92rem; font-weight: 700; color: #fff; margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .cs-feat-text { font-size: 0.845rem; color: rgba(255,255,255,0.65); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 2; }
+    .cs-results-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin: 22px 0; }
+    .cs-result-card { background: var(--navy); border-radius: var(--r-lg); padding: 22px 18px; text-align: center; }
+    .cs-result-n { font-family: var(--fh); font-size: clamp(1.6rem,2.5vw,2rem); font-weight: 800; color: var(--yellow); line-height: 1; margin-bottom: 8px; }
+    .cs-result-l { font-size: 0.78rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+    .cs-sidebar { position: sticky; top: 96px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+    .cs-details { background: var(--navy); border-radius: var(--r-xl); padding: 22px; }
+    .cs-details-lbl { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.3); margin-bottom: 18px; }
+    .cs-detail { display: flex; gap: 11px; align-items: flex-start; margin-bottom: 14px; }
+    .cs-detail:last-child { margin-bottom: 0; }
+    .cs-di { flex-shrink: 0; width: 30px; height: 30px; background: rgba(255,255,255,0.07); border-radius: var(--r-sm); display: flex; align-items: center; justify-content: center; }
+    .cs-di svg { width: 14px; height: 14px; stroke: var(--yellow); stroke-width: 2; fill: none; }
+    .cs-df { font-size: 0.65rem; color: rgba(255,255,255,0.38); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
+    .cs-dv { font-size: 0.84rem; font-weight: 600; color: rgba(255,255,255,0.85); line-height: 1.4; }
+    .cs-float-cta { background: var(--navy); border-radius: var(--r-xl); padding: 22px 20px; text-align: center; }
+    .cs-float-cta-h { font-family: var(--fh); font-size: 1rem; font-weight: 800; color: #fff; line-height: 1.25; margin-bottom: 8px; letter-spacing: -0.02em; }
+    .cs-float-cta-sub { font-size: 0.78rem; color: rgba(255,255,255,0.55); line-height: 1.5; margin-bottom: 16px; }
+    .cs-float-cta-btn { display: flex; align-items: center; justify-content: center; gap: 6px; background: var(--yellow); color: var(--navy); font-size: 0.85rem; font-weight: 700; padding: 11px 18px; border-radius: var(--r-md); transition: opacity 0.2s; line-height: 1; }
+    .cs-float-cta-btn:hover { opacity: 0.88; }
+    .cs-float-cta-btn svg { width: 14px; height: 14px; stroke: currentColor; fill: none; flex-shrink: 0; }
+    .cs-float-cta-note { display: block; font-size: 0.72rem; color: rgba(255,255,255,0.35); margin-top: 10px; }
+    @media (max-width: 900px) {
+      .cs-layout { grid-template-columns: 1fr; }
+      .cs-sidebar { position: static; }
+      .cs-float-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; border-radius: 0; display: flex; align-items: center; gap: 16px; text-align: left; padding: 14px 20px; box-shadow: 0 -4px 24px rgba(0,0,0,0.25); }
+      .cs-float-cta-h { font-size: 0.88rem; margin-bottom: 0; flex: 1; }
+      .cs-float-cta-sub { display: none; }
+      .cs-float-cta-btn { white-space: nowrap; flex-shrink: 0; }
+      .cs-float-cta-note { display: none; }
+      body { padding-bottom: 72px; }
+    }
+    @media (max-width: 768px) { .cs-layout { grid-template-columns: 1fr; } .cs-sidebar { position: static; } .cs-stats-grid { grid-template-columns: repeat(2,1fr); } .cs-stat:nth-child(2) { border-right: none; } .cs-stat:nth-child(3), .cs-stat:nth-child(4) { border-top: 1px solid var(--border); } .cs-feat-grid { grid-template-columns: 1fr; } .cs-results-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) { .cs-wrap { padding: 0 var(--gutter-sm); } .cs-img-wrap { padding: 0 var(--gutter-sm); } }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Encore AI",
+  "url": "https://Encore AI.com/",
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://Encore AI.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://Encore AI.com/case-studies"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "B2B SaaS Rightsizes 200+ Kubernetes Clusters",
+      "item": "https://Encore AI.com/case-studies/saas-kubernetes-optimization"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "B2B SaaS Rightsizes 200+ Kubernetes Clusters and Saves $1.2M/year with Encore AI",
+  "description": "How a B2B SaaS company used Encore AI's AI-K8s Ops Assistant to rightsize 200+ Kubernetes clusters, save $1.2M/year, and reduce cluster management from 3 days to 15 minutes per month.",
+  "image": "https://Encore AI.com/og-image.png",
+  "datePublished": "2026-07-15",
+  "dateModified": "2026-07-15",
+  "author": { "@type": "Organization", "name": "Encore AI", "url": "https://Encore AI.com/" },
+  "publisher": { "@type": "Organization", "name": "Encore AI", "url": "https://Encore AI.com/", "logo": "https://Encore AI.com/assets/images/logo-color.svg" },
+  "mainEntityOfPage": "https://Encore AI.com/case-studies/saas-kubernetes-optimization",
+  "isPartOf": { "@type": "CollectionPage", "name": "Encore AI Case Studies", "url": "https://Encore AI.com/case-studies" }
+}
+</script>
+</head>
+<body>
+<script src="../js/cookie-consent.d2224.js" defer></script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ9TMSSH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div id="navbar"><!--NAVBAR-SSR-START--><a href="#main" class="sr-only">Skip to main content</a>
+  <header>
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="../index1.html" class="nav-logo" aria-label="Encore AI home">
+          <svg class="nav-logo-img" viewbox="0 0 405 75" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Encore AI">
+            <path d="M23.1028 32.4683C23.1028 32.4683 21.9369 52.2891 35.0536 66.8632C35.0536 66.8632 20.8035 70.2525 15.5242 53.455C10.7148 38.1522 23.1028 32.4683 23.1028 32.4683Z" fill="#FACF39"></path>
+            <path d="M39.3252 29.8549C39.3252 29.8549 38.3095 47.1217 49.7361 59.818C49.7361 59.818 37.3221 62.7706 32.7231 48.1374C28.5334 34.8064 39.3252 29.8549 39.3252 29.8549Z" fill="#FACF39"></path>
+            <path d="M9.25643 44.9543C9.25643 44.9543 8.46733 58.369 17.3447 68.2327C17.3447 68.2327 8.89167 68.7541 5.28457 58.7708C2.59682 51.332 9.25643 44.9543 9.25643 44.9543Z" fill="#FACF39"></path>
+            <path d="M53.0582 24.6657C53.0582 24.6657 23.7642 -12.0611 3.6519 4.11621C-16.4604 20.2935 53.0582 24.6657 53.0582 24.6657Z" fill="#FACF39"></path>
+            <path d="M63.2315 48.019C68.2474 48.019 72.3136 43.9528 72.3136 38.9369C72.3136 33.921 68.2474 29.8549 63.2315 29.8549C58.2156 29.8549 54.1494 33.921 54.1494 38.9369C54.1494 43.9528 58.2156 48.019 63.2315 48.019Z" fill="#FACF39"></path>
+          </svg>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index1.html">Home</a></li>
+          <li class="nav-has-dd"><button type="button" class="nav-dd-toggle" aria-haspopup="true" aria-expanded="false">Product<svg class="nav-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="nav-dd-menu" role="menu"><li><a href="../ai-sre.html"><span class="nav-dd-name">AI SRE</span><span class="nav-dd-desc">Investigate incidents to a cited root cause</span></a></li><li><a href="../ai-finops.html"><span class="nav-dd-name">AI FinOps</span><span class="nav-dd-desc">Find and fix cloud and Kubernetes waste</span></a></li><li><a href="../kubernetes-operations.html"><span class="nav-dd-name">Kubernetes Operations</span><span class="nav-dd-desc">Day-two Kubernetes with an AI agent</span></a></li><li><a href="../cloudops.html"><span class="nav-dd-name">CloudOps</span><span class="nav-dd-desc">One console across AWS, Azure and GCP</span></a></li><li><a href="../runbook-automation.html"><span class="nav-dd-name">Runbook Automation</span><span class="nav-dd-desc">Durable, no-code runbooks with approval gates</span></a></li></ul></li>
+          <li><a href="../pricing.html">Pricing</a></li>
+          <li><a href="../resources/blog.html">Blog</a></li>
+          <li><a href="../case-studies.html" class="active">Case Studies</a></li>
+          <li><a href="https://docs.Encore AI.com/" target="_blank" rel="noopener">Docs</a></li>
+        </ul>
+        <div class="nav-right">
+          <a href="../index.html" class="btn-nav">
+            Sign In <span class="nav-arr"><svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+          </a>
+          <button class="ham" aria-label="Open menu" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav class="mob-menu" id="mobNav" aria-label="Mobile navigation">
+      <a href="../index1.html">Home</a>
+      <a href="../ai-sre.html">AI SRE</a>
+      <a href="../ai-finops.html">AI FinOps</a>
+      <a href="../kubernetes-operations.html">Kubernetes Operations</a>
+      <a href="../cloudops.html">CloudOps</a>
+      <a href="../runbook-automation.html">Runbook Automation</a>
+      <a href="../pricing.html">Pricing</a>
+      <a href="../resources/blog.html">Blog</a>
+      <a href="../case-studies.html" class="active">Case Studies</a>
+      <a href="https://docs.Encore AI.com/" target="_blank" rel="noopener">Docs</a>
+      <a href="https://github.com/Encore AI/Encore AI" target="_blank" rel="noopener">GitHub Repo</a>
+      <a href="../index.html" style="background:var(--yellow);color:var(--navy);text-align:center;font-weight:700;">Sign In</a>
+    </nav>
+  </header><!--NAVBAR-SSR-END--></div>
+  <script src="navbar2.js" defer></script>
+
+  <section class="cs-hero">
+    <div class="cs-wrap">
+      <div class="cs-hero-inner">
+        <nav class="cs-breadcrumb" aria-label="Breadcrumb">
+          <ol class="cs-breadcrumb-list">
+            <li class="cs-breadcrumb-item"><a href="../index1.html" class="cs-breadcrumb-link">Home</a></li>
+            <li class="cs-breadcrumb-item"><a href="../case-studies.html" class="cs-breadcrumb-link">Case Studies</a></li>
+            <li class="cs-breadcrumb-item" aria-current="page">B2B SaaS Rightsizes 200+ Kubernetes Clusters</li>
+          </ol>
+        </nav>
+        <h1 class="cs-hero-h">B2B SaaS rightsizes <span class="hl">200+ Kubernetes</span> clusters and saves $1.2M/year</h1>
+        <p class="cs-hero-lead">3 engineer-days per month reduced to 15 minutes. Automated rightsizing with safety guardrails, auto-rollback, and one-click approval workflows for production clusters.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-img-wrap">
+    <!-- Kubernetes: pod topology mesh + resource optimization -->
+    <svg class="cs-graphic" viewbox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid slice">
+      <defs>
+        <lineargradient id="k8-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#08101e"></stop><stop offset="100%" stop-color="#0c1528"></stop></lineargradient>
+        <filter id="k8-blur"><fegaussianblur stddeviation="20"></fegaussianblur></filter>
+        <filter id="k8-gf"><fegaussianblur stddeviation="2.5" result="b"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
+      </defs>
+      <rect width="1200" height="360" fill="url(#k8-bg)"></rect>
+      <!-- ambient -->
+      <ellipse cx="400" cy="180" rx="300" ry="140" fill="#326ce5" opacity="0.06" filter="url(#k8-blur)"></ellipse>
+      <ellipse cx="900" cy="180" rx="250" ry="120" fill="#fac835" opacity="0.04" filter="url(#k8-blur)"></ellipse>
+      <!-- grid dots -->
+      <g fill="#ffffff" opacity="0.05">
+        <circle cx="100" cy="60" r="1.5"></circle><circle cx="200" cy="60" r="1.5"></circle><circle cx="300" cy="60" r="1.5"></circle><circle cx="400" cy="60" r="1.5"></circle><circle cx="500" cy="60" r="1.5"></circle><circle cx="600" cy="60" r="1.5"></circle><circle cx="700" cy="60" r="1.5"></circle><circle cx="800" cy="60" r="1.5"></circle><circle cx="900" cy="60" r="1.5"></circle><circle cx="1000" cy="60" r="1.5"></circle><circle cx="1100" cy="60" r="1.5"></circle>
+        <circle cx="100" cy="120" r="1.5"></circle><circle cx="200" cy="120" r="1.5"></circle><circle cx="300" cy="120" r="1.5"></circle><circle cx="400" cy="120" r="1.5"></circle><circle cx="500" cy="120" r="1.5"></circle><circle cx="600" cy="120" r="1.5"></circle><circle cx="700" cy="120" r="1.5"></circle><circle cx="800" cy="120" r="1.5"></circle><circle cx="900" cy="120" r="1.5"></circle><circle cx="1000" cy="120" r="1.5"></circle><circle cx="1100" cy="120" r="1.5"></circle>
+        <circle cx="100" cy="180" r="1.5"></circle><circle cx="200" cy="180" r="1.5"></circle><circle cx="300" cy="180" r="1.5"></circle><circle cx="400" cy="180" r="1.5"></circle><circle cx="500" cy="180" r="1.5"></circle><circle cx="600" cy="180" r="1.5"></circle><circle cx="700" cy="180" r="1.5"></circle><circle cx="800" cy="180" r="1.5"></circle><circle cx="900" cy="180" r="1.5"></circle><circle cx="1000" cy="180" r="1.5"></circle><circle cx="1100" cy="180" r="1.5"></circle>
+        <circle cx="100" cy="240" r="1.5"></circle><circle cx="200" cy="240" r="1.5"></circle><circle cx="300" cy="240" r="1.5"></circle><circle cx="400" cy="240" r="1.5"></circle><circle cx="500" cy="240" r="1.5"></circle><circle cx="600" cy="240" r="1.5"></circle><circle cx="700" cy="240" r="1.5"></circle><circle cx="800" cy="240" r="1.5"></circle><circle cx="900" cy="240" r="1.5"></circle><circle cx="1000" cy="240" r="1.5"></circle><circle cx="1100" cy="240" r="1.5"></circle>
+        <circle cx="100" cy="300" r="1.5"></circle><circle cx="200" cy="300" r="1.5"></circle><circle cx="300" cy="300" r="1.5"></circle><circle cx="400" cy="300" r="1.5"></circle><circle cx="500" cy="300" r="1.5"></circle><circle cx="600" cy="300" r="1.5"></circle><circle cx="700" cy="300" r="1.5"></circle><circle cx="800" cy="300" r="1.5"></circle><circle cx="900" cy="300" r="1.5"></circle><circle cx="1000" cy="300" r="1.5"></circle><circle cx="1100" cy="300" r="1.5"></circle>
+      </g>
+      <!-- mesh connections -->
+      <g stroke="#326ce5" stroke-opacity="0.2" stroke-width="1" fill="none">
+        <line x1="200" y1="180" x2="350" y2="120"></line><line x1="200" y1="180" x2="350" y2="240"></line>
+        <line x1="350" y1="120" x2="500" y2="80"></line><line x1="350" y1="120" x2="500" y2="180"></line>
+        <line x1="350" y1="240" x2="500" y2="180"></line><line x1="350" y1="240" x2="500" y2="280"></line>
+        <line x1="500" y1="80" x2="650" y2="120"></line><line x1="500" y1="180" x2="650" y2="120"></line>
+        <line x1="500" y1="180" x2="650" y2="240"></line><line x1="500" y1="280" x2="650" y2="240"></line>
+        <line x1="650" y1="120" x2="800" y2="80"></line><line x1="650" y1="120" x2="800" y2="180"></line>
+        <line x1="650" y1="240" x2="800" y2="180"></line><line x1="650" y1="240" x2="800" y2="280"></line>
+        <line x1="800" y1="80" x2="950" y2="130"></line><line x1="800" y1="180" x2="950" y2="130"></line>
+        <line x1="800" y1="180" x2="950" y2="230"></line><line x1="800" y1="280" x2="950" y2="230"></line>
+        <line x1="950" y1="130" x2="1060" y2="180"></line><line x1="950" y1="230" x2="1060" y2="180"></line>
+      </g>
+      <!-- pod nodes -->
+      <g filter="url(#k8-gf)">
+        <!-- master -->
+        <circle cx="200" cy="180" r="18" fill="#326ce5" opacity="0.25"></circle><circle cx="200" cy="180" r="12" fill="none" stroke="#326ce5" stroke-width="2" opacity="0.8"></circle><circle cx="200" cy="180" r="4" fill="#326ce5"></circle>
+        <!-- ring 1 -->
+        <circle cx="350" cy="120" r="10" fill="none" stroke="#38a2ff" stroke-width="1.5" opacity="0.7"></circle><circle cx="350" cy="120" r="3" fill="#38a2ff" opacity="0.8"></circle>
+        <circle cx="350" cy="240" r="10" fill="none" stroke="#38a2ff" stroke-width="1.5" opacity="0.7"></circle><circle cx="350" cy="240" r="3" fill="#38a2ff" opacity="0.8"></circle>
+        <!-- ring 2 -->
+        <circle cx="500" cy="80" r="8" fill="none" stroke="#fac835" stroke-width="1.5" opacity="0.6"></circle><circle cx="500" cy="80" r="3" fill="#fac835" opacity="0.7"></circle>
+        <circle cx="500" cy="180" r="8" fill="none" stroke="#fac835" stroke-width="1.5" opacity="0.6"></circle><circle cx="500" cy="180" r="3" fill="#fac835" opacity="0.7"></circle>
+        <circle cx="500" cy="280" r="8" fill="none" stroke="#fac835" stroke-width="1.5" opacity="0.6"></circle><circle cx="500" cy="280" r="3" fill="#fac835" opacity="0.7"></circle>
+        <!-- ring 3 -->
+        <circle cx="650" cy="120" r="8" fill="none" stroke="#38a2ff" stroke-width="1.5" opacity="0.55"></circle><circle cx="650" cy="120" r="3" fill="#38a2ff" opacity="0.65"></circle>
+        <circle cx="650" cy="240" r="8" fill="none" stroke="#38a2ff" stroke-width="1.5" opacity="0.55"></circle><circle cx="650" cy="240" r="3" fill="#38a2ff" opacity="0.65"></circle>
+        <!-- ring 4 -->
+        <circle cx="800" cy="80" r="7" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.6"></circle><circle cx="800" cy="80" r="2.5" fill="#4ade80" opacity="0.7"></circle>
+        <circle cx="800" cy="180" r="7" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.6"></circle><circle cx="800" cy="180" r="2.5" fill="#4ade80" opacity="0.7"></circle>
+        <circle cx="800" cy="280" r="7" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.6"></circle><circle cx="800" cy="280" r="2.5" fill="#4ade80" opacity="0.7"></circle>
+        <!-- ring 5 -->
+        <circle cx="950" cy="130" r="7" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.5"></circle><circle cx="950" cy="130" r="2.5" fill="#4ade80" opacity="0.6"></circle>
+        <circle cx="950" cy="230" r="7" fill="none" stroke="#4ade80" stroke-width="1.5" opacity="0.5"></circle><circle cx="950" cy="230" r="2.5" fill="#4ade80" opacity="0.6"></circle>
+        <!-- edge -->
+        <circle cx="1060" cy="180" r="9" fill="none" stroke="#fac835" stroke-width="1.5" opacity="0.6"></circle><circle cx="1060" cy="180" r="3" fill="#fac835" opacity="0.7"></circle>
+      </g>
+      <!-- labels -->
+      <text x="200" y="207" font-family="monospace" font-size="7" fill="#326ce5" opacity="0.6" text-anchor="middle">CONTROL PLANE</text>
+      <text x="600" y="44" font-family="monospace" font-size="11" fill="#fac835" opacity="0.65" text-anchor="middle" filter="url(#k8-gf)">54% RESOURCE COST SAVINGS &middot; 99.95% UPTIME</text>
+      <text x="1200" y="349" font-family="monospace" font-size="9" fill="#ffffff" opacity="0.18" text-anchor="end" letter-spacing="3">Encore AI &middot; K8S OPTIMIZATION</text>
+    </svg>
+  </div>
+
+  <div class="cs-stats">
+    <div class="cs-wrap">
+      <div class="cs-stats-grid">
+        <div class="cs-stat"><div class="cs-stat-n">200+</div><div class="cs-stat-l">Clusters Rightsized</div></div>
+        <div class="cs-stat"><div class="cs-stat-n">$1.2M</div><div class="cs-stat-l">Annual Savings</div></div>
+        <div class="cs-stat"><div class="cs-stat-n">97%</div><div class="cs-stat-l">Less Management Time</div></div>
+        <div class="cs-stat"><div class="cs-stat-n">&lt;1 hr</div><div class="cs-stat-l">Mean Time to Detect Issues</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-body">
+    <div class="cs-wrap">
+      <div class="cs-layout">
+
+        <article class="cs-narrative">
+
+          <section class="cs-section" id="challenge">
+            <span class="cs-section-kicker">01 &mdash; Challenge</span>
+            <h2 class="cs-section-h">200+ over-provisioned clusters with no time to fix them</h2>
+            <div class="cs-prose">
+              <p>A B2B SaaS company serving enterprise customers across 12 regions had grown to 200+ Kubernetes clusters over four years of rapid scaling. Each cluster was provisioned conservatively - engineers added buffer "just in case" - and nobody ever had time to go back and rightsize them.</p>
+              <p>The result was systematic over-provisioning. Average cluster utilization sat below 35%, but the engineering team was reluctant to change resource allocations in production without robust data and rollback mechanisms. Manual rightsizing meant a dedicated engineer spending 3 full days per month analyzing metrics, writing proposals, getting approvals, and carefully executing changes one cluster at a time.</p>
+              <p>At their growth rate, the problem was only going to get worse. They needed Kubernetes cost governance that could scale with their infrastructure - without adding headcount or introducing risk.</p>
+            </div>
+          </section>
+
+          <section class="cs-section" id="solution">
+            <span class="cs-section-kicker">02 &mdash; Solution</span>
+            <h2 class="cs-section-h">Continuous AI-driven rightsizing with safety guardrails</h2>
+            <div class="cs-prose">
+              <p>Encore AI's AI-K8s Ops Assistant connected to all 200+ clusters through their existing Prometheus and Datadog observability stack. Within 48 hours, it had built baseline utilization profiles for every namespace, deployment, and node pool - identifying rightsizing opportunities with statistical confidence intervals to prevent under-provisioning.</p>
+            </div>
+            <div class="cs-feat-grid">
+              <div class="cs-feat">
+                <div class="cs-feat-icon"><svg viewbox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+                <div class="cs-feat-title">AI-Driven Rightsizing</div>
+                <div class="cs-feat-text">Encore AI analyzed CPU and memory utilization patterns across all clusters, generating rightsizing recommendations with confidence scores and projected savings.</div>
+              </div>
+              <div class="cs-feat">
+                <div class="cs-feat-icon"><svg viewbox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                <div class="cs-feat-title">Safety Guardrails</div>
+                <div class="cs-feat-text">Every rightsizing action included configurable safety buffers, blast radius limits, and automated rollback triggers.</div>
+              </div>
+              <div class="cs-feat">
+                <div class="cs-feat-icon"><svg viewbox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></div>
+                <div class="cs-feat-title">One-Click Approval Workflows</div>
+                <div class="cs-feat-text">Engineers received Slack-native approval requests with full context - utilization data, projected savings, risk score - and could approve with a single click.</div>
+              </div>
+              <div class="cs-feat">
+                <div class="cs-feat-icon"><svg viewbox="0 0 24 24"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 .49-3.41"></path></svg></div>
+                <div class="cs-feat-title">Automatic Rollback</div>
+                <div class="cs-feat-text">Encore AI monitored cluster health post-change. If any SLO degraded after a rightsizing action, it automatically reverted the change and filed an incident report.</div>
+              </div>
+            </div>
+            <div class="cs-prose">
+              <p>For non-production clusters, Encore AI executed rightsizing autonomously on a weekly schedule. For production clusters, it surfaced recommendations through the one-click approval workflow - giving engineers full control without requiring them to do the analysis themselves.</p>
+            </div>
+          </section>
+
+          <section class="cs-section" id="results">
+            <span class="cs-section-kicker">03 &mdash; Results</span>
+            <h2 class="cs-section-h">$1.2M saved. 3 days down to 15 minutes.</h2>
+            <div class="cs-results-grid">
+              <div class="cs-result-card">
+                <div class="cs-result-n">$1.2M</div>
+                <div class="cs-result-l">Annual Kubernetes cost savings</div>
+              </div>
+              <div class="cs-result-card">
+                <div class="cs-result-n">97%</div>
+                <div class="cs-result-l">Reduction in cluster management time</div>
+              </div>
+              <div class="cs-result-card">
+                <div class="cs-result-n">&lt;1 hr</div>
+                <div class="cs-result-l">Mean time to detect rightsizing issues</div>
+              </div>
+            </div>
+            <div class="cs-prose">
+              <p>The B2B SaaS company now continuously optimizes all 200+ clusters without dedicating engineering time to it. The $1.2M in annual savings was reinvested into product engineering. The engineer who used to spend 3 days per month on cluster management now spends 15 minutes reviewing Encore AI's weekly summary and approving the handful of production changes that required human sign-off.</p>
+            </div>
+          </section>
+
+        </article>
+
+        <aside class="cs-sidebar">
+          <div class="cs-details">
+            <div class="cs-details-lbl">Case Details</div>
+            <div class="cs-detail">
+              <div class="cs-di"><svg viewbox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg></div>
+              <div><div class="cs-df">Industry</div><div class="cs-dv">B2B SaaS</div></div>
+            </div>
+            <div class="cs-detail">
+              <div class="cs-di"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg></div>
+              <div><div class="cs-df">Use Case</div><div class="cs-dv">Kubernetes Cost Optimization</div></div>
+            </div>
+            <div class="cs-detail">
+              <div class="cs-di"><svg viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></div>
+              <div><div class="cs-df">Stack</div><div class="cs-dv">Kubernetes (200+ clusters), Prometheus, Datadog, GKE</div></div>
+            </div>
+          </div>
+          <div class="cs-float-cta">
+            <div class="cs-float-cta-h">Stop over-provisioning Kubernetes clusters.</div>
+            <div class="cs-float-cta-sub">Continuous rightsizing with safety guardrails and auto-rollback built in.</div>
+            <a href="../index" class="cs-float-cta-btn">
+              Try Encore AI Free
+              <svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="csh-cta">
+    <div class="csh-cta-inner">
+      <div class="csh-cta-text">
+        <div class="csh-cta-brand">Encore AI</div>
+        <h2 class="csh-cta-h">Ready to stop over-provisioning Kubernetes?</h2>
+        <p class="csh-cta-sub">AI-K8s Ops Assistant rightsizes your clusters continuously - with safety guardrails, auto-rollback, and one-click approvals for production. No K8s expertise required.</p>
+      </div>
+      <div class="csh-cta-actions">
+        <a href="../index" class="btn-yellow">
+          Get Started
+          <span class="btn-y-arr"><svg viewbox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></span>
+        </a>
+        <span class="csh-cta-note">No credit card required. Up and running in days.</span>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"><!--FOOTER-SSR-START--><footer role="contentinfo">
+    <div class="foot-inner">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand">
+            <img src="../images/logo-footer.f10f1.svg" alt="Encore AI" class="foot-logo-img">
+          </div>
+          <p class="foot-tagline">AIOps platform and AI agentic automation platform for SRE, DevOps, and CloudOps teams. Pre-built AI agents for incident management, cloud cost optimization, and cloud automation.</p>
+        </div>
+        <div class="foot-col">
+          <p class="foot-h">Product</p>
+          <ul class="foot-links">
+            <li><a href="../integrations.html">Integrations</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+            <li><a href="https://docs.Encore AI.com/" target="_blank" rel="noopener">Docs</a></li>
+            <li><a href="https://docs.Encore AI.com/docs/features/ai/use-cases/" target="_blank" rel="noopener">Use Cases</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <p class="foot-h">Company</p>
+          <ul class="foot-links">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../case-studies.html">Case Studies</a></li>
+            <li><a href="../resources/blog.html">Blog</a></li>
+            <li><a href="../discover.html">Discover</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <p class="foot-h">Connect</p>
+          <ul class="foot-links">
+            <li><a href="https://www.linkedin.com/company/Encore AI" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@Encore AI" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://discord.com/invite/PzkHAuTfT7" target="_blank" rel="noopener">Discord</a></li>
+            <li><a href="../demo.html" style="color:var(--yellow);font-weight:700;" attr-ceana-public-event-id="57a74a4d6a1b436895b655bcb10f1c0de3b0c442">Book a Demo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bot">
+        <div>
+          <div class="foot-copy">2026 Encore AI, Inc. All rights reserved.</div>
+        </div>
+        <div class="foot-legal">
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms of Service</a>
+          <a href="#" data-cookie-settings>Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer><!--FOOTER-SSR-END--></div>
+  <script src="footer2.js" defer></script>
+
+  <script src="../js/main.d2224.js" defer></script>
+
+</body>
+</html>
